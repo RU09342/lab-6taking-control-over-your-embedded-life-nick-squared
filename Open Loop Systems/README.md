@@ -37,14 +37,3 @@ In addition, the microprocessor also is reading the temperature sensor and outpu
 ## Operation
 Once the system is connected, the controls are simple: send the desired temperature to the microprocessor over the same UART as the temperature sensor's output. The microprocessor will calculate the desired PWM and set the fan to it. The ranges for the system are between 37&#176;C and 88&#176;C, if the user attempts to set a range outside of those temperatures, the fan will only go to the end of its range and hold there. The largest error source will be the room temperature, and the user must add the difference between the current room temperature and 20.5&#176;C when sending the desired temperature. If done correctly, the fan can get the to the correct temperature within a few seconds.
 
-## Open Loop Control System
-You then need to use this information to make a final open loop control system where a user can state what temperature they want the regulator to be maintained at, and the microcontroller will basically calculate/look up what it needs to set the fan to. Do not over complicate this and make it some elaborate system. All this needs to do is some math and set a duty cycle or voltage, and display in some capacity the current temperature of the system as you are measuring it.
-
-
-## Deliverables
-Your README needs to contain schematics of your system, the plot of the plot of the temperature and input voltages at the 5C steps, and a brief talk about why you chose the processor you did along with the control technique for the fan. As always, you should include a brief description of the code you generated to run the experiment. You need to also include information on how to use your control software, including what inputs it is expecting and what range of values you are expecting. At this time you are not going to need to user-proof the system, but you will for the milestone, so keep it in the back of your head.
-
-### What your README and code doesn't need
-For starters, note the fact I ask you to do this with only one board. You also do not need to give me all of your code in the README, just tell me functionally what is going on along with showing off any functions you may have made.
-
-Your code *DOES NOT* need to perform any sort of closed loop control. Save that for the milestone. This means that your system does not need to try to actively change the fan speed without your help. You are going to essentially make your microcontroller one big Convert-o-Box to turn a desired temperature into a controllable signal, and then be able to read a temperature.
