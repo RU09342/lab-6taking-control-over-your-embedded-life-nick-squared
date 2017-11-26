@@ -1,5 +1,5 @@
 # Lab 6: Precision Control
-Nick Squared
+## Nick Squared
 
 ## PWM
 
