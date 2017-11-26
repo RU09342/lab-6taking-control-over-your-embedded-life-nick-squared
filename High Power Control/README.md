@@ -1,16 +1,18 @@
 # Lab 6: "High Power" Control
-For starters, you will not be dealing with anything that is truly "high power". Instead, what I am considering "high power" is anything with the potential to damage or fry your microcontrollers if you were to drive them directly. The idea behind this part of the lab is to learn how not only to drive things that may require a high voltage or high current, but how to then protect your microcontroller from them.
+#### Nick Squared
+While there is nothing that is really "high power", the amount of power used is more than enough to damage a microcontroller. To use this amount of power, a different approach must be used. Instead of driving the circuit directly, the micrprocessor must be used strictly as a controller, prefferebaly one that is isolated from the dangerous areas.  For this purpose, 12V will be used as power and a power resistor with an LED will be used to test the controller.
 
-## Switching
-Most of you have used one of the types of switching circuits to control the RGB LEDs. For this part of the lab, you need to focus on the different types of switching circuits along with the differences in inductive and resistive loads.
+## Relays
+For very high power, especially AC, solidstate relays are perfect for the job. The relay used here can handle 120V AC, but only 14V DV, this is okay for the purposes here. Relays operate with a mechanical switch, which is operated by a coil. The switch is always passing the power through, but the coil can change which side it outputs to. This coil requires 1A, or 6V with its internal resistance, to change the switch. The microproccessor cannot power that either, so a MOSFET is used to drive the coil. The MOSFET is sourced by ground, with the micrprocessor acting as the gate, this causes extremely low current to be sourced by the microprocessor itself. When turned on, the power on the other end of the coil gets a path to ground, powering the coil and changing the switch. The microprocessor is set to change on a timed interval, as the gif below shows.
 
-### Relays
-A relay is a electro-mechanical system which can open and close a switch based on an input. 
-![Relay](https://www.phidgets.com/docs/images/1/1d/3051_1_Relay_Diagram.jpg)
-These are extremely useful in situations where large amounts of current need to flow, such as in automotive applications, but they do have their limits. For starters, since the actuation process requires a constant current, sometimes this can be too much for your processor to handle. Second, a lot of these relays require higher than 3.3V, which limits how you can actually turn these things on and off. Using the MSP430G2553, control the state of a relay to drive a power resistor with +12V. Your README for this part should include a screenshot of the output of your MSP and the voltage across the resistor. Try to figure out the switching speed limitations of the relay experimentally.
+<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Relay%20switch.gif" width="500"/>
 
-### MOSFET Switching
-The MOSFET switch is a very simple circuit which can be used in a multitude of applications. One of the most important features of the MOSFET Switch is the near zero current it takes to switch the MOSFET from an on to an off state. There are two main architectures, low-side and high-side switch, each requiring a different type of MOSFET. Using the MSP430G2553, drive a power resistor with +12V in the same fashion as the relay. Obtain an MSP430G2553 voltage output along with the voltage through the power resistor. Try to figure out the switching speed limitations of the MOSFET experimentally.
+## MOSFET Switching
+If a MOSFET is driving the coil, then driving the whole circuit is not large step. The LED is connected to 12V on one end, and a power resistor on the other. The power resistor is the drain of the MOSFET, and the source is connected to ground. The gate is still the microprocessor with the same timing, so there is still barely any current sourced by the microprocessor. Since it is a MOSFET, it could only switch 1 LED. A gif of the circuit can be found below.
 
-## Deliverables
-Along with what was asked in each part, you will need to utilize the DMM to determine what the current draw from each switch is and if that falls into spec with the Microcontroller. You need to then come up with the best configuration you can think of using to control something that requires large current, but also protects your processor from damage. The reason I am asking you to do this with just the G2553 is: A) The code is just generating a square wave, and B) this part of the lab runs the highest chance of damaging your parts and we have spare G2553's just in case.
+<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/MOS%20switch.gif" width="500"/>
+
+
+## Current
+The main reason to use relays and MOSFETs is not voltage, but current. The microprocessor can only source a few miliamps of current.  To drop 12V over the LED and resistor, it would require 120 mA, much more than the microprocessors can handle. Instead of 120 mA, the current needed to switch the MOSFET is a few microamps.  The MOSFET is what allows the high amounts of current and voltage to be used, despite the microprocessor not being able to source anything.
+
