@@ -17,7 +17,7 @@ The temperature sensor is a LM35 powered by the 12V from the fan, and its output
 ### Diagrams 
 Here is a schematic of the system, as well as a picture of an old version. The only differences between the old version and the current one is that the power resistor is a different value and the copper wire was not there yet.
 
-**Schematic here!**
+<img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20Loop%20Schematic.PNG" width="300"/>
 <img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20Loop.jpg" width="300"/>
 
 ## Microprocessor
