@@ -4,6 +4,7 @@ Nick Squared
 ## PWM
 
 ### Overview
+
 A 5kHz 50% duty cycle PWM signal is fed into an invertng op amp with a low pass filter with approzimately 1kHz cut off. 
 
 ### Diagrams
@@ -14,6 +15,7 @@ PWM Schematic
 PWM circuit
 
 ### Loading Effects
+
 By adding various sizes of loads to the PWM circuit the overall output of the circuit is affected. When a 100ohm load is placed at the output of the Op Amp a DC voltage of -1.83V is measured. The voltage is negative due to the inverting Op Amp set up and the filter forces only the DC signal of the input signal to be passed through. Since the load is so small compared to the rest of the circuit, it causes the output voltage to be increaded by 0.18V. Then when a 1kohm load is connected to the output of the circuitm, the output signal acts like an integrated sine wave. The steep portions of the input signal are cut off and replaced with gradulaly increasing and decreasing slopes. This shows that the greater the load put on the circuit the less the output wave form will look like the input signal.
 
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM%20100%20ohm.png" width="300"/>
@@ -48,6 +50,7 @@ For example, when a 100ohm resister is placed on the output of the circuit, the 
 100 ohm load on the output of the R2R ladder.
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/R2R%201k%20ohm.png" width="300"/>
 1kohm load on the output of the R2R ladder.
+
 ### Bill of Materials
 
 |Part     |Manufacturer Part #|Brand|Value|Package      |Unit Price ($)|Quantity|Website|
