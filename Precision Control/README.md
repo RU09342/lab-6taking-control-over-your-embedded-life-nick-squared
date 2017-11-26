@@ -8,7 +8,7 @@ A 5kHz 50% duty cycle PWM signal is fed into an invertng op amp with a low pass 
 
 ### Diagrams
 
-<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM_Schematic.png" width="300"/>
+<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM_Schematic2.png" width="300"/>
 PWM Schematic
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM_Circuit.jpg" width="300"/>
 PWM circuit
