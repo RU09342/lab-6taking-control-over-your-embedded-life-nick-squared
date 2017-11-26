@@ -24,7 +24,8 @@ When an AC PWM wave is sent through the circuit the output appears to be a trian
 
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM%20AC.png" width="300"/>
 PWM AC Signal
-<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM%20FFT.png" width="300"/>
+
+<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM%20FFT.png" width="250"/>
 
 PWM Output FFT
 
