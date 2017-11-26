@@ -13,3 +13,7 @@ How the triangle wave was created, discuss FFT, create bill of materials includi
 ## Bill of Materials
 
 
+|Part     |Manufacturer Part #|Brand|Value|Sizes|Package      |Unit Price ($)|Website|
+|------------|-------------------|-----|-------------------|-------------------|-------------|--------------|----|
+|
+
