@@ -4,7 +4,7 @@ Nick Squared
 ## PWM
 
 ### Overview
-A 5kHz 50% duty cycle PWM signal is fed into an invertng op amp with a low pass filter with approzimately 0.1Hz cut off. 
+A 5kHz 50% duty cycle PWM signal is fed into an invertng op amp with a low pass filter with approzimately 1kHz cut off. 
 
 ### Diagrams
 
@@ -28,16 +28,15 @@ By adding various sizes of loads to the PWM circuit the overall output of the ci
 |------------|-------------------|-----|-------------------|-------------------|-------------|--------------|----|
 | Dual Operational Amplifier | TL072 | Texas Instruments | N/A | PDIP | 0.78 | 1 | [Link](http://www.ti.com/product/TL072/samplebuy)|
 |330kohm Resistor | CF14JT330K | Stackpole Electronics Inc | 330kohm | Through hole | 0.00475 | 2 | [Link](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF14JT330K/CF14JT330KTR-ND/1741401)
-|3.3uF Capacitor | D103Z25Z5VF63L6R | Vishay | 3.3uF | Ceramic | 0.10 | 1 | [Link](https://www.mouser.com/ProductDetail/Vishay/D103Z25Z5VF63L6R/?qs=GtWgGqLahXfPUmEzpKg22A%3D%3D&gclid=Cj0KCQiA6enQBRDUARIsAGs1YQiXv7P1Cnc1w_7wmFo4SApIVNbxLRB1FKgxk128ZSR-DXECI6ehnlcaAhh2EALw_wcB)|
+|470pF Capacitor | D471K20Y5PH63L6R | Vishay | 470pF | Ceramic | 0.20 | 1 | [Link](https://www.mouser.com/ProductDetail/Vishay/D471K20Y5PH63L6R/?qs=wEmTtUuRSe77jhSuFgvudw%3D%3D&gclid=Cj0KCQiA6enQBRDUARIsAGs1YQgNIkd8Bdq7dIL9qU-A3CiCrlsrvvJfKe8bxjE8Wf_IcY-deiaxBgAaAowJEALw_wcB)|
 
 ## R2R DAC
-How the triangle wave was created, discuss FFT, create bill of materials including link to digikey cart
 
 ### Overview
 A 10kHz signal is used to create a triangle wave. Every
 ### Diagrams
 
-<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/R2R_Schematic.PNG" width="300"/>
+<img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/R2R_Schematic.PNG" width="400"/>
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/R2R%20DAC.jpg" width="300"/>
 
 
