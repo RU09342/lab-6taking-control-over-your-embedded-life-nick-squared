@@ -43,7 +43,7 @@ Once the system is connected, the controls are simple: send the desired temperat
 |------------|-------------------|-------------------|-------------------|-------------|-------------|
 | Temperature Sensor |  LM35CZ/NOPB | Texas Instruments | TO-226-3 | 6.37 | [Link](https://www.digikey.com/products/en?mpart=LM35CZ%2FNOPB&v=296)|
 | 5 Volt Regulator | L7805CV | STMicroelectronis | 5.0V 1.0A | 0.48 | [Link](https://www.mouser.com/ProductDetail/STMicroelectronics/L7805CV/?qs=9NrABl3fj%2FqplZAHiYUxWg%3D%3D)|
-| Power Resistor | 3.3QTR-ND | Yageo | 3.3 ohm 1/4W |  0.00749 | [Link](https://www.digikey.com/product-detail/en/yageo/CFR-25JR-52-3R3/3.3QTR-ND/11914)|
+| Power Resistor | 3.3WTC-ND | Yageo | 3.3 ohm 1W |  0.17 | [Link](https://www.digikey.com/product-detail/en/yageo/FMP100JR-52-3R3/3.3WCT-ND/2058924)|
 | Fan | AUB0812VH-SP00 | Delta Electronics | 12VDC | 8.04 | [Link](https://www.digikey.com/product-detail/en/delta-electronics/AUB0812VH-SP00/603-1157-ND/1850526)|
 
 
