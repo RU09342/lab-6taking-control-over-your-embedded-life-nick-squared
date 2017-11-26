@@ -12,16 +12,20 @@ A 5kHz 50% duty cycle PWM signal is fed into an invertng op amp with a low pass 
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM_Schematic2.png" width="300"/>
 PWM Schematic
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM_Circuit.jpg" width="300"/>
-PWM circuit
+PWM Circuit
 
 ### Results 
 The PWM with 50% duty cycle caused an output of a DC signal with an offset of 1.66V
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM%20DC%2050%25.png" width="300"/>
+
 PWM Output Wave Form
 
-when an AC PWM wave is sent through the circuit the output appears to be a triangle wave with slopped tops. The FFT results of the wave show the slowly decreasing harmonic frequencies that slos make up the triangle wave.
+When an AC PWM wave is sent through the circuit the output appears to be a triangle wave with slopped tops. The FFT results of the wave show the slowly decreasing harmonic frequencies that slos make up the triangle wave.
+
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM%20AC.png" width="300"/>
+PWM AC Signal
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/PWM%20FFT.png" width="300"/>
+
 PWM Output FFT
 
 
@@ -63,7 +67,7 @@ R2R Triangle Wave
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/R2R-zoom.png" width="300">
 R2R Triangle Wave Zoomed In
 
-The signal not only looks like a triangle wave form, but it also has similair FFT Harmonics as a true triangle wave.
+As seen in the image below the signal not only looks like a triangle wave form, but it also has similair FFT Harmonics as a true triangle wave.
 <img src="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/R2R%20FFT.png" width="300">
 R2R Triangle Wave with FFT
 
