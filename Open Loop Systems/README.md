@@ -17,8 +17,8 @@ The temperature sensor is a LM35 powered by the 12V from the fan, and its output
 ### Diagrams 
 Here is a schematic of the system, as well as a picture of an old version. The only differences between the old version and the current one is that the power resistor is a different value and the copper wire was not there yet.
 
-<img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20Loop%20Schematic.PNG" width="400"/>
-<img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20Loop.jpg" width="300"/>
+<img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20Loop%20Schematic.PNG" width="500"/>
+<img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20Loop.jpg" width="500"/>
 
 ## Microprocessor
 The MSP403FR5994 microprocessor is in charge of the following :
@@ -28,7 +28,7 @@ The MSP403FR5994 microprocessor is in charge of the following :
 
 Once the user inputs a temperature over the UART terminal, the PWM needed to reach that temperature is calculated by using the following graph.
 
-<img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20loop%20graph.png" width="600"/>
+<img src ="https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-nick-squared/blob/master/Assets/Open%20loop%20graph.png" width="500"/>
 
 This graph is based on a room temperature of 20.5&#176;C, and has a 96% accuracy at that room temperature.
 
