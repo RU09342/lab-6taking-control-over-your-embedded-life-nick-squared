@@ -37,3 +37,15 @@ In addition, the microprocessor also is reading the temperature sensor and outpu
 ## Operation
 Once the system is connected, the controls are simple: send the desired temperature to the microprocessor over the same UART as the temperature sensor's output. The microprocessor will calculate the desired PWM and set the fan to it. The ranges for the system are between 37&#176;C and 88&#176;C, if the user attempts to set a range outside of those temperatures, the fan will only go to the end of its range and hold there. The largest error source will be the room temperature, and the user must add the difference between the current room temperature and 20.5&#176;C when sending the desired temperature. If done correctly, the fan can get the to the correct temperature within a few seconds.
 
+## Bill of Materials
+
+|Part     |Manufacturer Part #|Brand|Value|Unit Price ($)|Website|
+|------------|-------------------|-------------------|-------------------|-------------|-------------|
+| Temperature Sensor |  LM35CZ/NOPB | Texas Instruments | TO-226-3 | 6.37 | [Link](https://www.digikey.com/products/en?mpart=LM35CZ%2FNOPB&v=296)|
+| 5 Volt Regulator | L7805CV | STMicroelectronis | 5.0V 1.0A | 0.48 | [Link](https://www.mouser.com/ProductDetail/STMicroelectronics/L7805CV/?qs=9NrABl3fj%2FqplZAHiYUxWg%3D%3D)|
+| Power Resistor | 3.3QTR-ND | Yageo | 3.3 ohm 1/4W |  0.00749 | [Link](https://www.digikey.com/product-detail/en/yageo/CFR-25JR-52-3R3/3.3QTR-ND/11914)|
+| Fan | AUB0812VH-SP00 | Delta Electronics | 12VDC | 8.04 | [Link](https://www.digikey.com/product-detail/en/delta-electronics/AUB0812VH-SP00/603-1157-ND/1850526)|
+
+
+
+
